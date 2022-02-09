@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
 </head>
+
 <body>
-    
+    <div class="content">
+        <div class="tools-container">
+            <div class="size-picker-container">
+                <input type="range" id="size-picker" min="8" max="48" value="16">
+                <br>
+                <label for="size-picker" id="size-label">16</label>
+            </div>
+            <div class="color-container">
+                <div class="pallette-container">
+                    <input type="color" class="pallette" value="#708090">
+                </div>
+                <div class="random-color">
+                    ?
+                </div>
+                <div class="rainbow-color">
+                    <img src="./images/rainbow.png" alt="rainbow colors">
+                </div>
+                <div class="eraser">
+                    <img src="./images/eraser-tool.png" alt="rainbow colors">
+                </div>
+            </div>
+            <div class="reset">Reset</div>
+        </div>
+        <div class="sheet-container"></div>
+    </div>
+    <div class="footer">
+        <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons">Rainbow icons created by Freepik
+            -
+            Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/eraser" title="eraser icons">Eraser icons created by Boris
+            farias -
+            Flaticon</a>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
